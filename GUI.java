@@ -1,3 +1,4 @@
+import java.awt.BorderLayout;
 import java.awt.GridLayout;
 
 import javax.swing.BorderFactory;
@@ -13,6 +14,12 @@ public class GUI {
 		JPanel panel = new JPanel();
 		panel.setBorder(BorderFactory.createEmptyBorder(30, 30, 10, 30));
 		panel.setLayout(new GridLayout());
+
+        frame.add(panel, BorderLayout.CENTER);
+		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		frame.setTitle("Our GUI");
+		frame.pack();
+		frame.setVisible(true);
 		
 	}
 
